@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal</title>
+    <style>
+      
+        body
+        {
+            z-index: 1;
+            background-color:orange;
+            color: black;
+            box-sizing: border-box;
+            
+        }
+        #modal
+        {
+            padding: 50px;
+            background-color: aqua;
+            color: black;
+            display:none;
+            border: 2px solid black;
+            z-index: 2;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+        .dark
+        {
+            background-color: black;
+            color:bisque;
+        }
+        
+        p{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+            width: 20px;
+        }
+        button
+        {
+            justify-content: center;
+            width: 100px;
+            height: 60px;
+            background-color:whitesmoke;
+            color: rgb(241, 59, 13);
+            padding: 0.9rem;
+            border-radius: .5rem;
+            align-items: center;
+            gap: 20px;
+        }
+        
+    </style>
+</head>
+<body class="dark">
+    <button onclick="change()">changemode</button>
+    <div id="modal">
+        <div class="data">
+            <p id="check">even</p>
+        </div>
+            <p id="count">0</p>
+        <div id="buttons">
+        <button onclick="incr()">+</button>
+        <button onclick="decr()">-</button>
+        <button onclick="remove()">Remove</button>
+        </div>
+    </div>
+    <div ></div>
+    <button onclick="myopen()">open/close modal</button>
+    <script src="./script.js"></script>
+</body>
+</html>
